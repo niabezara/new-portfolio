@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Theme from "./styles/Theme";
 import GlobalStyle from "./styles/GlobalStyles";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import IndexPage from "./Pages/indexPage";
+
+import IndexPage from "../src/Pages/IndexPage";
 
 // import CustomCursor from "./components/Cursor";
 // import IndexPage from "./pages/IndexPage";
