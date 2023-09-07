@@ -2,8 +2,8 @@ import { Container, Div } from "../styles/Styles";
 import styled from "styled-components";
 
 import AboutMe from "../components/AboutMe";
-import NameSpace from "./NameSpaces";
-// import animations
+import NameSpace from "./NameSpace";
+
 // import { useScroll } from "../util/useScroll";
 import { motion } from "framer-motion";
 // import { slideAnim } from "../util/animation";

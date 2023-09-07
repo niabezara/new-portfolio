@@ -2,9 +2,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 // import { useScroll } from "../util/useScroll";
 // import { slideAnim } from "../util/animation";
-
-function NameSpace() {
-  //   const [ref, controls] = useScroll();
+function Namespace() {
+  // const [ref, controls] = useScroll();
 
   return (
     <>
@@ -120,4 +119,4 @@ const Properties = styled(motion.div)`
   }
 `;
 
-export default NameSpace;
+export default Namespace;
