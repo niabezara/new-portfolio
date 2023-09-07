@@ -5,6 +5,8 @@ import GlobalStyle from "./styles/GlobalStyles";
 import Header from "./components/Header";
 
 import IndexPage from "../src/Pages/IndexPage";
+import CustomCursor from "./components/Cursor";
+import Footer from "./components/Footer";
 
 // import CustomCursor from "./components/Cursor";
 // import IndexPage from "./pages/IndexPage";
@@ -25,14 +27,14 @@ function App() {
   return (
     <div className="App">
       <Theme theme={theme}>
-        {/* <CustomCursor /> */}
+        <CustomCursor />
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Routes>
           <Route path="/" element={<IndexPage />} />
           {/* <Route path="/archive" element={<ArchivePage />} /> */}
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Theme>
     </div>
   );
