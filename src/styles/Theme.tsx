@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { ThemeType, lightType, darkType } from "../types/types";
+import { lightType, darkType } from "../types/types";
 
 const lightTheme: lightType = {
   backgroundColor: "#f5f5fd",
