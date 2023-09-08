@@ -100,7 +100,7 @@ export const MobileIconsData = [
     id: 4,
     className: "icon-desktop",
     iconUrl: "/rest.png",
-    top: "100px",
+    top: "150px",
     left: "250px",
   },
   {

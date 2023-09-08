@@ -5,7 +5,7 @@ import anim1 from "../assets/anim1.json";
 import { desktopIconsData, MobileIconsData } from "../util/icons";
 
 const Technologies = () => {
-  const isMobile = window.innerWidth < 400;
+  const isMobile = window.innerWidth < 600;
 
   const iconsData = isMobile ? MobileIconsData : desktopIconsData;
 
@@ -15,6 +15,7 @@ const Technologies = () => {
       <div
         style={{
           display: "flex",
+          padding: "2rem 2rem",
           justifyContent: "center",
           position: "relative",
         }}
