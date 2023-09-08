@@ -70,6 +70,16 @@ export const desktopIconsData = [
     top: "-36px",
     right: "259px",
   },
+  {
+    id: 10,
+    className: "icon-desktop",
+    iconUrl: "/typescript.png",
+    left: "none",
+    top: "30%",
+    right: "10%",
+    width: "50px",
+    height: "50px",
+  },
 ];
 
 export const MobileIconsData = [
@@ -143,5 +153,15 @@ export const MobileIconsData = [
     left: "none",
     top: "-10%",
     right: "25%",
+  },
+  {
+    id: 10,
+    className: "icon-desktop",
+    iconUrl: "/typescript.png",
+    left: "none",
+    top: "20%",
+    right: "30%",
+    width: "50px",
+    height: "50px",
   },
 ];
