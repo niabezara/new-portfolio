@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Technologies } from "../styles/Styles";
 import { formatDate } from "../util/UseUtil";
-import { githubrepos } from "../types/types";
 
 function Archive() {
   const [repos, setRepos] = useState<any[]>([]);

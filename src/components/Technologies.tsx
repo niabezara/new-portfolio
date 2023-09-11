@@ -1,17 +1,13 @@
-import React from "react";
 import styled from "styled-components";
 import { Container, Div } from "../styles/Styles";
 import Techstack from "../components/TechStack";
 import { motion } from "framer-motion";
-
 import {
   faCode,
   faDatabase,
   faRuler,
 } from "@fortawesome/fontawesome-free-solid";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
-import { slideAnim } from "../util/animation";
-import { useScroll } from "../util/useScroll";
 
 const backend = {
   title: "BACK END",
@@ -34,8 +30,6 @@ const styling = {
 };
 
 const Technologies = () => {
-  const [ref, controls] = useScroll();
-
   return (
     <Div>
       <StyledTechnologies>
