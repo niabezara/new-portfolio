@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     --color-border: ${(props) => props.theme.borderColor};
     --color-second: ${(props) => props.theme.secondColor};
     --color-gradient: ${(props) => props.theme.gradientColor};
-    --font-mono: "Blorado", sans-serif;
+    --font-mono: "Roboto Mono", sans-serif;
     --font-sans: 'Inter', sans-serif;
   }
 

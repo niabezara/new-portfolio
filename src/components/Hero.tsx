@@ -3,10 +3,16 @@ import styled from "styled-components";
 import { Container, Description, Hide } from "../styles/Styles";
 import { slideAnim, staggerAnim } from "../util/animation";
 import Wave from "../assets/img/Wave";
+import Lottie from "lottie-react";
+import animationdata2 from "../assets/dots.json";
 
 const HeroSection = () => {
   return (
     <StyledHero variants={staggerAnim} initial="hidden" animate="show">
+      <Lottie
+        animationData={animationdata2}
+        style={{ position: "absolute", zIndex: "-100" }}
+      />
       <Description>
         <motion.div>
           <Hide>
@@ -42,7 +48,9 @@ const HeroSection = () => {
 };
 
 const StyledHero = styled(Container)`
+  position: relative;
   min-height: 100vh;
+  max-width: none;
   p {
     padding: 0 0 1.5rem;
   }
