@@ -10,7 +10,7 @@ const HeroSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2 variants={slideAnim.up}>Hi, my name is </motion.h2>
+            <motion.h2 variants={slideAnim.up}>Hello, I'm </motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={slideAnim.up}>

@@ -144,7 +144,7 @@ const Wrapper = styled.div`
 `;
 const Input = styled.input`
   background: transparent;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   resize: none;
   box-shadow: none !important;
   padding: 24px 21px !important;
