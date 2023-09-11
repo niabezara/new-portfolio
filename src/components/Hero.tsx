@@ -20,7 +20,7 @@ const HeroSection = () => {
         </motion.div>
         <Hide>
           <motion.p variants={slideAnim.up}>
-            I'm a full-stack developer passionate about crafting web solutions
+            I'm a Front-end developer passionate about crafting web solutions
             that blend functionality and exceptional user experiences
           </motion.p>
         </Hide>

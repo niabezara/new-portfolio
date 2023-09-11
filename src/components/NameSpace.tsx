@@ -19,20 +19,20 @@ function Namespace() {
           <div className="circle3 circle"></div>
         </Window>
         <p>
-          <span>namespace</span> Portfolio
+          <span>Class</span> Portfolio
           <br />
           &#123;
         </p>
         <Class>
-          <span>public class</span> Nia : Person
+          <span>Constructor</span> {"()"}
           <br />
           &#123; <br />
           <Properties>
-            <span>public int</span> Age &#123; get; &#125; = 28;
+            <span>This.name</span> = 'Nia Bezarashvili';
             <br />
-            <span>public string</span> City &#123; get; &#125; = "Tbilisi";
+            <span>This.dayOfBirthTimestamp</span> = "796771200";
             <br />
-            <span>public string</span> Studying &#123; get; &#125; = "Bitcamp";
+            <span>This.email</span> = "niabezarashvili@yahoo.com";
             <br />
           </Properties>
           &#125;

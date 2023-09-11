@@ -25,7 +25,7 @@ function AboutMe() {
         </Social>
         <Social>
           <Circle />
-          <li>Javascript</li>
+          <li>Styled-components</li>
         </Social>
         <Social>
           <Circle />
@@ -33,7 +33,7 @@ function AboutMe() {
         </Social>
         <Social>
           <Circle />
-          <li>Next.js</li>
+          <li>Rest-API</li>
         </Social>
       </Technologies>
     </StyledAboutMe>
