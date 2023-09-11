@@ -78,7 +78,6 @@ export default function Contact() {
               <div>
                 <Input
                   placeholder="Name"
-                  style={{ fontFamily: "Raleway", fontStyle: " sans-serif" }}
                   {...register("to_name", { required: true })}
                   aria-invalid={errors.to_name ? "true" : "false"}
                 />
@@ -95,7 +94,6 @@ export default function Contact() {
               <div>
                 <Input
                   placeholder="Email"
-                  style={{ fontFamily: "Raleway", fontStyle: " sans-serif" }}
                   {...register("from_name", {
                     required: "Email Address is required",
                   })}
@@ -114,7 +112,6 @@ export default function Contact() {
               <div>
                 <TextArea
                   placeholder="Write your message"
-                  style={{ fontFamily: "Raleway", fontStyle: " sans-serif" }}
                   {...register("message", { required: true })}
                 />
               </div>
@@ -142,6 +139,7 @@ const Wrapper = styled.div`
   /* width: 60%; */
 `;
 const Input = styled.input`
+  font-family: var(--font-mono);
   background: transparent;
   /* margin-bottom: 2rem; */
   resize: none;
@@ -153,9 +151,9 @@ const TextArea = styled.input`
   background: transparent;
   margin-bottom: 2rem;
   resize: none;
-
+  font-family: var(--font-mono);
   box-shadow: none !important;
-  padding: 24px 21px !important;
+  padding: 60px 21px !important;
   border: 1px solid #14202b;
 `;
 const Btn = styled.button`
