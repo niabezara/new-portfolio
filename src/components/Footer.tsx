@@ -26,6 +26,7 @@ const Footer = () => {
 const StyledFooter = styled(Container)`
   flex-direction: column;
   padding: 2rem;
+  text-align: center;
   gap: 0.5rem;
   p {
     font-size: 0.7rem;
