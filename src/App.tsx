@@ -9,7 +9,7 @@ import CustomCursor from "./components/Cursor";
 import Footer from "./components/Footer";
 import Archive from "./Pages/Archive";
 import { Helmet } from "react-helmet";
-import { ClipLoader, PacmanLoader } from "react-spinners";
+import { PacmanLoader } from "react-spinners";
 function App() {
   const [theme, setTheme] = useState("dark");
   const [Loading, setLoading] = useState(false);
