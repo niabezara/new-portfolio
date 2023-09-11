@@ -12,7 +12,7 @@ const Footer = () => {
           Code.
         </p>
         <a
-          href="https://github.com/mariangle/react-portfolio-styled-motion"
+          href="https://github.com/niabezara/new-portfolio"
           target="_blank"
           rel="noreferrer"
         >

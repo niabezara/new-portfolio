@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { Hide } from "../styles/Styles";
+import animationdata from "../../src/assets/paper.json";
+import Lottie from "lottie-react";
 
 type Inputs = {
   to_name: string;
@@ -48,6 +50,9 @@ export default function Contact() {
 
   return (
     <Section id="contact">
+      <PaperImg>
+        <Lottie animationData={animationdata} />
+      </PaperImg>
       <Wrapper>
         <div>
           <Hide>
@@ -122,10 +127,13 @@ export default function Contact() {
 }
 
 const Section = styled.div`
+  max-width: 1080px;
   height: 100vh;
-  width: 60%;
+
   padding: 2rem 2rem;
   margin: auto;
+  position: relative;
+  overflow: hidden;
 `;
 const Wrapper = styled.div`
   /* display: flex;
@@ -156,4 +164,32 @@ const Btn = styled.button`
   padding: 15px 40px;
   margin-bottom: 3rem;
   color: #5ce8d2;
+`;
+const PaperImg = styled.div`
+  position: absolute;
+  z-index: 1000;
+  animation: flyPaperPlane 10s linear infinite;
+
+  @keyframes flyPaperPlane {
+    0% {
+      left: 0%;
+      top: 50%;
+    }
+    25% {
+      left: 25%;
+      top: 0;
+    }
+    50% {
+      left: 50%;
+      top: 50%;
+    }
+    75% {
+      left: 75%;
+      top: 10%;
+    }
+    100% {
+      left: 100%;
+      top: 50%;
+    }
+  }
 `;
