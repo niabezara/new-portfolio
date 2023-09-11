@@ -70,7 +70,11 @@ export default function Contact() {
               <span></span>
             </div>
           ) : (
-            <form ref={ref} onSubmit={handleSubmit(onSubmit)}>
+            <form
+              ref={ref}
+              onSubmit={handleSubmit(onSubmit)}
+              style={{ width: "60%" }}
+            >
               <div>
                 <Input
                   placeholder="Name"
@@ -129,18 +133,13 @@ export default function Contact() {
 const Section = styled.div`
   max-width: 1080px;
   height: 100vh;
-
   padding: 2rem 2rem;
   margin: auto;
   position: relative;
   overflow: hidden;
 `;
 const Wrapper = styled.div`
-  /* display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; */
+  /* width: 60%; */
 `;
 const Input = styled.input`
   background: transparent;
