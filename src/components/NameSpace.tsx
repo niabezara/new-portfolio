@@ -52,7 +52,7 @@ const Class = styled.div`
 
 const StyledNamespace = styled(motion.div)`
   border-radius: 20px;
-  max-height: 19rem;
+  /* max-height: 19rem; */
   border: 4px solid var(--color-border);
   background: var(--color-bg);
   box-shadow: var(--color-shadow);

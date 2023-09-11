@@ -7,11 +7,7 @@ import Header from "./components/Header";
 import IndexPage from "../src/Pages/IndexPage";
 import CustomCursor from "./components/Cursor";
 import Footer from "./components/Footer";
-
-// import CustomCursor from "./components/Cursor";
-// import IndexPage from "./pages/IndexPage";
-// import ArchivePage from "./pages/ArchivePage";
-// import Footer from "./components/Footer";
+import Archive from "./Pages/Archive";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -32,7 +28,7 @@ function App() {
         <Header toggleTheme={toggleTheme} theme={theme} />
         <Routes>
           <Route path="/" element={<IndexPage />} />
-          {/* <Route path="/archive" element={<ArchivePage />} /> */}
+          <Route path="/archive" element={<Archive />} />
         </Routes>
         <Footer />
       </Theme>

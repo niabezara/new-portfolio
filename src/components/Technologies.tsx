@@ -1,76 +1,86 @@
+import React from "react";
 import styled from "styled-components";
-import { Div } from "../styles/Styles";
-import Lottie from "lottie-react";
-import anim1 from "../assets/anim1.json";
-import { desktopIconsData, MobileIconsData } from "../util/icons";
+import { Container, Div } from "../styles/Styles";
+import Techstack from "../components/TechStack";
+import { motion } from "framer-motion";
+
+import {
+  faCode,
+  faDatabase,
+  faRuler,
+} from "@fortawesome/fontawesome-free-solid";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { slideAnim } from "../util/animation";
+import { useScroll } from "../util/useScroll";
+
+const backend = {
+  title: "BACK END",
+  technologies: ["Cs50", "NodeJS", "TypeScript", "Prisma"],
+};
+
+const frontend = {
+  title: "FRONT END",
+  technologies: ["HTML5", "CSS3", "JavaScript", "React/Redux", "NextJS"],
+};
+
+const database = {
+  title: "DATABASE",
+  technologies: ["MongoDB"],
+};
+
+const styling = {
+  title: "STYLING",
+  technologies: ["Css Modules", "TailwindCSS", "Styled Components"],
+};
 
 const Technologies = () => {
-  const isMobile = window.innerWidth < 600;
-
-  const iconsData = isMobile ? MobileIconsData : desktopIconsData;
+  const [ref, controls] = useScroll();
 
   return (
     <Div>
-      <Header>SKILLS</Header>
-      <div
-        style={{
-          display: "flex",
-          padding: "2rem 2rem",
-          justifyContent: "center",
-          position: "relative",
-        }}
-      >
-        {iconsData.map((icon) => (
-          <ReactIcon
-            key={icon.id}
-            src={icon.iconUrl}
-            alt={`Icon ${icon.id}`}
-            style={{
-              animation: "fly 2s ease-in-out infinite",
-              position: "absolute",
-              left: icon.left,
-              right: icon.right,
-              top: icon.top,
-              width: icon.width,
-              height: icon.height,
-            }}
+      <StyledTechnologies>
+        <Header>TECHNOLOGIES I'VE USED</Header>
+        <Grid>
+          <Techstack
+            icon={faCode}
+            title={backend.title}
+            technologies={backend.technologies}
           />
-        ))}
-        {/* <ReactIcon
-          src="/react.png"
-          alt=""
-          style={{
-            width: "50px",
-            height: "50px",
-            , // Apply the animation
-          }} */}
-
-        <Lottie animationData={anim1} style={{ width: "50%", height: "50%" }} />
-      </div>
+          <Techstack
+            icon={faLaptopCode}
+            title={frontend.title}
+            technologies={frontend.technologies}
+          />
+          <Techstack
+            icon={faDatabase}
+            title={database.title}
+            technologies={database.technologies}
+          />
+          <Techstack
+            icon={faRuler}
+            title={styling.title}
+            technologies={styling.technologies}
+          />
+        </Grid>
+      </StyledTechnologies>
     </Div>
   );
 };
 
-export default Technologies;
+const StyledTechnologies = styled(Container)`
+  flex-direction: column;
+`;
+
 const Header = styled.h3`
   margin-bottom: 4rem;
+`;
+
+const Grid = styled(motion.div)`
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   text-align: center;
 `;
 
-const ReactIcon = styled.img`
-  @keyframes fly {
-    0% {
-      transform: translateY(0); /* Starting position */
-    }
-    50% {
-      transform: translateY(
-        -20px
-      ); /* Midway position, adjust the value as needed */
-    }
-    100% {
-      transform: translateY(
-        0
-      ); /* Ending position, back to the original position */
-    }
-  }
-`;
+export default Technologies;

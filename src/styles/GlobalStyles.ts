@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     scroll-behavior: smooth;  
     overflow-x:hidden;
+    
 
   }
 

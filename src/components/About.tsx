@@ -12,7 +12,7 @@ const About = () => {
   //   const [ref, controls] = useScroll();
 
   return (
-    <Div>
+    <Div id="about">
       <StyledAbout>
         <motion.h2>
           <span>01.</span> ABOUT
