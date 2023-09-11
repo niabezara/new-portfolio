@@ -1,10 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useScroll } from "../util/useScroll";
-import { slideAnim } from "../util/animation";
 
 function Techstack({
   title,
@@ -15,8 +11,6 @@ function Techstack({
   technologies: string[];
   icon: any;
 }) {
-  const [ref, controls] = useScroll();
-
   return (
     <StackContainer>
       <IconContainer>
