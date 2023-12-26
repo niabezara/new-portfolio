@@ -11,12 +11,12 @@ import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const backend = {
   title: "BACK END",
-  technologies: ["Cs50", "NodeJS", "TypeScript", "Prisma"],
+  technologies: ["NodeJS", "TypeScript", "Prisma"],
 };
 
 const frontend = {
   title: "FRONT END",
-  technologies: ["HTML5", "CSS3", "JavaScript", "React/Redux", "NextJS"],
+  technologies: ["HTML5", "Zustand", "JavaScript", "React/Redux", "NextJS"],
 };
 
 const database = {

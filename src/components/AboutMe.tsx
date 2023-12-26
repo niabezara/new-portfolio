@@ -33,7 +33,7 @@ function AboutMe() {
         </Social>
         <Social>
           <Circle />
-          <li>Rest-API</li>
+          <li>Nextjs</li>
         </Social>
       </Technologies>
     </StyledAboutMe>
