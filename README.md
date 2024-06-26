@@ -1,27 +1,47 @@
-# React + TypeScript + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio repository! This project showcases my skills and projects, built using React and various frontend technologies. Below, you'll find information about the technologies used, both on the frontend and backend, as well as my knowledge in programming.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Frontend
+- **React:** A JavaScript library for building user interfaces.
+- **Framer Motion:** A motion library for React to create smooth animations.
+- **Styled Components:** A library for styling React components with tagged template literals.
+- **Lottie:** A library for adding high-quality animations to your React projects.
+- **Theme Providers:** Implementing theme providers for styling and theming consistency.
+- **Typescript:** A superset of JavaScript that adds static typing to the language.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Backend
+- **REST API:** Building and consuming RESTful APIs for backend communication.
 
-- Configure the top-level `parserOptions` property like this:
+## Knowledge
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+I possess knowledge in the following programming technologies:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Frontend
+- JavaScript
+- HTML/CSS
+- React
+- Next.js
+- Zustand
+- Zod Validation
+- Typescript
+- Tailwind
+- Styled-Components
+- React Router
+- Redux Toolkit
+- React Query
+
+### Backend
+- REST API
+- MongoDB
+
+## Version Control
+- **Git:** A distributed version control system.
+- **GitHub:** A web-based hosting service for version control using Git.
+
+Feel free to explore the code, projects, and contributions in this repository. If you have any questions or suggestions, please don't hesitate to reach out!
+
+
