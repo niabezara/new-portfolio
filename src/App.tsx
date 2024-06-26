@@ -10,8 +10,11 @@ import Footer from "./components/Footer";
 import Archive from "./Pages/Archive";
 import { Helmet } from "react-helmet";
 import { PacmanLoader } from "react-spinners";
+
+type ThemeType = "dark" | "light";
+
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState<ThemeType>("dark");
   const [Loading, setLoading] = useState(false);
 
   function toggleTheme() {
