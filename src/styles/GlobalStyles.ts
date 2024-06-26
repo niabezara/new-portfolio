@@ -150,6 +150,9 @@ const GlobalStyle = createGlobalStyle`
   td:first-child{
       color: var(--color-text);
   }
+  form{
+    width:60%;
+  }
   @media (max-width: 650px) {
   table,
   thead,
@@ -163,7 +166,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 1rem 0;
     border-bottom: 2px solid var(--color-bg-2);
   }
+  form{
+    width:100%;
+  }
 }
+
+
+
 `;
 
 export default GlobalStyle;

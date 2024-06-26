@@ -64,6 +64,13 @@ const StyledHero = styled(Container)`
       font-weight: 800;
     }
   }
+  @media (max-width: 850px) {
+    h2 {
+      span {
+        font-size: 2.5rem;
+      }
+    }
+  }
 `;
 
 const ButtonContainer = styled.div`

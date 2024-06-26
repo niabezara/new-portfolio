@@ -19,6 +19,7 @@ export const Description = styled(motion.div)`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  width: 100%;
 `;
 
 export const Hide = styled.div`

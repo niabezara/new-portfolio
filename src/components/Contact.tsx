@@ -23,7 +23,7 @@ export default function Contact() {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data: any) => {
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
     console.log(ref.current);
     emailjs
       .sendForm(
@@ -70,11 +70,7 @@ export default function Contact() {
               <span></span>
             </div>
           ) : (
-            <form
-              ref={ref}
-              onSubmit={handleSubmit(onSubmit)}
-              style={{ width: "60%" }}
-            >
+            <form ref={ref} onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <Input
                   placeholder="Name"

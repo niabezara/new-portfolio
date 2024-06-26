@@ -11,7 +11,12 @@ import { staggerAnim, slideAnim } from "../util/animation";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 
-const Nav = ({ toggleTheme, theme }: any) => {
+interface NavProps {
+  toggleTheme: () => void;
+  theme: "light" | "dark";
+}
+
+const Nav: React.FC<NavProps> = ({ toggleTheme, theme }) => {
   const [isMenuActive, toggleMenu] = useState(false);
   const { pathname } = useLocation();
 
@@ -97,7 +102,7 @@ const StyledNav = styled(motion.nav)`
 const NavLinks = styled(motion.ul)`
   display: flex;
   gap: 2rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
   background-color: var(--color-nav);
   border: 2px solid var(--color-border);
   padding: 1rem 2rem;

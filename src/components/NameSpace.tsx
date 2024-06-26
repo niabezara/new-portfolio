@@ -61,6 +61,9 @@ const StyledNamespace = styled(motion.div)`
   flex: 2;
   line-height: 130%;
   animation: float 3s infinite alternate;
+  @media (max-width: 850px) {
+    padding: 0.5rem;
+  }
   @keyframes float {
     0% {
       transform: translatey(0px);

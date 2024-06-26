@@ -11,7 +11,7 @@ import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const backend = {
   title: "BACK END",
-  technologies: ["NodeJS", "TypeScript", "Prisma"],
+  technologies: ["NodeJS", "Express", "TypeScript", "Prisma", "Strapi"],
 };
 
 const frontend = {
