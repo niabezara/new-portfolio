@@ -14,33 +14,36 @@ const HeroSection = () => {
         style={{ position: "absolute", zIndex: "-100" }}
       />
       <Description>
-        <motion.div>
+        <Wrapper>
+          <motion.div>
+            <Hide>
+              <motion.h2 variants={slideAnim.up}>Hello, I'm </motion.h2>
+            </Hide>
+
+            <Hide>
+              <motion.h2 variants={slideAnim.up}>
+                <span>Nia Bezarashvili</span>
+              </motion.h2>
+            </Hide>
+          </motion.div>
           <Hide>
-            <motion.h2 variants={slideAnim.up}>Hello, I'm </motion.h2>
+            <motion.p variants={slideAnim.up}>
+              I'm a Front-end developer passionate about crafting web solutions
+              that blend functionality and exceptional user experiences
+            </motion.p>
           </Hide>
-          <Hide>
-            <motion.h2 variants={slideAnim.up}>
-              <span>Nia Bezarashvili</span>
-            </motion.h2>
-          </Hide>
-        </motion.div>
-        <Hide>
-          <motion.p variants={slideAnim.up}>
-            I'm a Front-end developer passionate about crafting web solutions
-            that blend functionality and exceptional user experiences
-          </motion.p>
-        </Hide>
-        <ButtonContainer>
-          <Hide>
-            <a
-              href="https://github.com/niabezara"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <motion.button variants={slideAnim.up}>Github</motion.button>
-            </a>
-          </Hide>
-        </ButtonContainer>
+          <ButtonContainer>
+            <Hide>
+              <a
+                href="https://github.com/niabezara"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <motion.button variants={slideAnim.up}>Github</motion.button>
+              </a>
+            </Hide>
+          </ButtonContainer>
+        </Wrapper>
       </Description>
       <Wave />
     </StyledHero>
@@ -75,6 +78,11 @@ const StyledHero = styled(Container)`
 
 const ButtonContainer = styled.div`
   display: flex;
+`;
+
+const Wrapper = styled.div`
+  max-width: 1080px;
+  margin: 0 auto;
 `;
 
 export default HeroSection;

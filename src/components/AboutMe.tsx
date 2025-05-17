@@ -6,26 +6,26 @@ function AboutMe() {
   return (
     <StyledAboutMe>
       <motion.p>
-        I'm a front-end developer with a journey that started just couple of
-        months ago, transitioning
-        <span> from a different profession</span>.Despite the initial
-        challenges, I discovered my passion for creating captivating user
-        interfaces and exceptional user experiences. My commitment to continuous
-        learning drives me to craft visually appealing and functional websites,
-        always embracing new opportunities to grow and improve. Additionally,
-        I'm on a path to expand my skills in backend technologies, working
-        towards becoming a full-stack developer
+        I’m a dedicated Front-End Developer with growing full-stack experience,
+        focused on building seamless and engaging web applications. Skilled in
+        JavaScript and TypeScript, I specialize in modern frameworks like React
+        and Next.js to create intuitive, user-friendly interfaces. On the
+        backend, I work confidently with Node.js, Express, and RESTful APIs, and
+        I have experience managing databases with PostgreSQL as well as headless
+        CMS integration using Strapi. Driven by clean, efficient code and a
+        continuous eagerness to learn, I strive to contribute to innovative
+        projects that deliver meaningful user experiences.
       </motion.p>{" "}
       <br />
       <p className="bold">Recent technologies I've used:</p>
       <Technologies>
         <Social>
           <Circle />
-          <li>React</li>
+          <li>Node</li>
         </Social>
         <Social>
           <Circle />
-          <li>Styled-components</li>
+          <li>Tailwind</li>
         </Social>
         <Social>
           <Circle />

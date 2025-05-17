@@ -21,12 +21,19 @@ const frontend = {
 
 const database = {
   title: "DATABASE",
-  technologies: ["MongoDB"],
+  technologies: ["MongoDB", "PostgreSQL"],
 };
 
 const styling = {
   title: "STYLING",
-  technologies: ["Css Modules", "TailwindCSS", "Styled Components"],
+  technologies: [
+    "Tailwind CSS",
+    "Styled Components",
+    "Framer Motion",
+    "Headless UI",
+    "Radix UI",
+    "ShadCN UI",
+  ],
 };
 
 const Technologies = () => {
